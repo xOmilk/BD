@@ -35,7 +35,7 @@ create table compositor(
 );
 
 create table composicao(
-	idcompositor REFERENCES compositor(idcompositor),
-	idmusica REFERENCES musica(idmusica),
+	idcompositor INT REFERENCES compositor(idcompositor),
+	idmusica INT REFERENCES musica(idmusica),
 	PRIMARY KEY(idcompositor, idmusica)
 );
